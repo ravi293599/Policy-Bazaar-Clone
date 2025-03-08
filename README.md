@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Checkout the Live Link
+
+https://term-insurance.netlify.app/
+
 ## Available Scripts
 
 In the project directory, you can run:
