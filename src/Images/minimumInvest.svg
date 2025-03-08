@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50.229" height="46.877" viewBox="0 0 50.229 46.877">
+    <defs>
+        <style>
+            .prefix__cls-2{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke:#157bfb}
+        </style>
+    </defs>
+    <g id="prefix__minimum_amount_to_invest-01" data-name="minimum amount to invest-01" transform="translate(.5 .5)">
+        <path id="prefix__Path_2732" fill="#0f56af" d="M30.24 13.262a.192.192 0 0 0-.128 0h-.934a1.829 1.829 0 0 0-.358-.78h1.28a.192.192 0 0 0 .128 0 .166.166 0 0 0 0-.128v-.564a.166.166 0 0 0 0-.128.192.192 0 0 0-.128 0h-4.568a.179.179 0 0 0-.179.179v.729a.179.179 0 0 0 0 .128.166.166 0 0 0 .115 0h.793c.78 0 1.279.2 1.484.614h-2.213a.179.179 0 0 0-.179.179v.563a.179.179 0 0 0 .179.179h2.354a1.087 1.087 0 0 1-.563.678 2.444 2.444 0 0 1-1.177.243h-.614a.128.128 0 0 0-.115 0 .179.179 0 0 0 0 .128v.652a.23.23 0 0 0 0 .128c.7.742 1.625 1.791 2.738 3.134a.179.179 0 0 0 .141.064h1.074a.154.154 0 0 0 .154-.1.141.141 0 0 0 0-.179c-1.062-1.279-1.906-2.3-2.559-2.955a2.725 2.725 0 0 0 1.522-.6 2.034 2.034 0 0 0 .7-1.279h.921a.192.192 0 0 0 .128 0 .166.166 0 0 0 0-.128v-.64a.166.166 0 0 0 0-.128zm0 0" data-name="Path 2732" transform="translate(-.29 -7.876)"/>
+        <path id="prefix__Path_2733" d="M49.056 29.979l-3.339 3.339-9.2 6.64-1.638-1.625a4.593 4.593 0 1 0-5.041-4.977L27 30.388 38.258 19.13z" class="prefix__cls-2" data-name="Path 2733" transform="translate(.173 -5.786)"/>
+        <path id="prefix__Path_2734" d="M54.989 33.559L37.462 48.566h-5l-15.853-5.834H5.76v-9.173h10.849l.591-.259 3.582-1.535 1.663-.716H35.8v5H25.782l10.849 5.015 5.821-4.209 9.2-6.64z" class="prefix__cls-2" data-name="Path 2734" transform="translate(-5.76 -2.689)"/>
+        <path id="prefix__Path_2735" d="M38.08 36.77l-5.821 4.209-10.849-5.015h10.017v-5l.422-.422 4.593 4.606z" class="prefix__cls-2" data-name="Path 2735" transform="translate(-1.388 -2.599)"/>
+        <circle id="prefix__Ellipse_16" cx="7.51" cy="7.51" r="7.51" fill="none" stroke="#0f56af" stroke-linecap="round" stroke-linejoin="round" data-name="Ellipse 16" transform="translate(20.022)"/>
+        <path id="prefix__Path_2736" d="M35.3 33.9l-.409.422h-5.114a5 5 0 0 0-9.94.716l-3.582 1.535L9 29.369 19.849 18.52l12.179 12.039 2.93 2.93z" class="prefix__cls-2" data-name="Path 2736" transform="translate(-4.855 -5.957)"/>
+    </g>
+</svg>
