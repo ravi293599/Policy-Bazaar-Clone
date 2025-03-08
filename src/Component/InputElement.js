@@ -33,7 +33,7 @@ const InputElement = (props) => {
            </label>
            </>
           }
-          {props.type=="Select"&&<select type="select" placeholder="Investment Amount*" onChange={handleChange} className={"floating-select has-value"} onFocus={()=>setFocus(true)} onBlur={handleChange}>
+          {props.type==="Select"&&<select type="select" placeholder="Investment Amount*" onChange={handleChange} className={"floating-select has-value"} onFocus={()=>setFocus(true)} onBlur={handleChange}>
             <option>--Select--</option>
             <option>1</option>
             <option>2</option>
