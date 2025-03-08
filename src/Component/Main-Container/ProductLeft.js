@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import knowPlan from "../../Images/know-your-plan.svg";
-import clientLogo from "../../Images/bajajLogo.png";
 import calender_icon from "../../Images/calender_icon.svg";
 import loyalty from "../../Images/loyalty.svg";
 import taxSaving from "../../Images/tax-saving.svg";
@@ -17,7 +16,7 @@ const ProductLeft = () => {
             </div>
             <div className='planName'>
                 <h3>Smart Wealth Goal</h3>
-                <a href="#">
+                <a href="https://www.policybazaar.com/">
                     <img src={knowPlan} alt="notepad" />
                     Know Your Plan in 2 mins
                 </a>

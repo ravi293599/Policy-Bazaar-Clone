@@ -182,7 +182,7 @@ const BottomSection = () => {
             <p>Policybazaar Insurance Brokers Private Limited (formerly known as Policybazaar Insurance Web Aggregator Private Limited)</p>
             <p>CIN: U74999HR2014PTC053454 | Registered Office - Plot No.119, Sector - 44, Gurgaon, Haryana – 122001</p>
             <p>Policybazaar is now registered as a Direct Broker</p>
-            <a href='https://www.policybazaar.com/legal-and-admin-policies/#license' target="_blank">Registration No. 742, Registration Code No. IRDA/ DB 797/ 19, Valid till 09/06/2024, License category- Direct Broker (Life & General)</a>
+            <a href='https://www.policybazaar.com/legal-and-admin-policies/#license' rel="noreferrer" target="_blank">Registration No. 742, Registration Code No. IRDA/ DB 797/ 19, Valid till 09/06/2024, License category- Direct Broker (Life & General)</a>
             <p>Visitors are hereby informed that their information submitted on the website may be shared with insurers.</p>
             <p>Product information is authentic and solely based on the information received from the insurers.</p>
             <p>©️ Copyright 2008-2023 policybazaar.com. All Rights Reserved.</p>

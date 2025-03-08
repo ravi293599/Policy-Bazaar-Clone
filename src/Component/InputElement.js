@@ -15,11 +15,11 @@ const InputElement = (props) => {
     <div>
       <div className='form-field'>
         <div className='form-floating'>
-          {props.type=="Input"&&<input type="text" placeholder={props.placeholder} onChange={handleChange} className={focus?"floating-input has-value":"floating-input"} onFocus={()=>setFocus(true)} onBlur={handleChange} />}
-          {props.type=="Number"&&<input type="number" placeholder={props.placeholder} onChange={handleChange} className={focus?"floating-input has-value":"floating-input"} onFocus={()=>setFocus(true)} onBlur={handleChange} />}
-          {props.type=="Email"&&<input type="email" placeholder={props.placeholder} onChange={handleChange} className={focus?"floating-input has-value":"floating-input"} onFocus={()=>setFocus(true)} onBlur={handleChange} />}
-          {props.type=="Date"&&<input type="date" placeholder={props.placeholder} onChange={handleChange} className={"floating-input has-value"} onFocus={()=>setFocus(true)} onBlur={handleChange} />}
-          {props.type=="Radio"&&
+          {props.type==="Input"&&<input type="text" placeholder={props.placeholder} onChange={handleChange} className={focus?"floating-input has-value":"floating-input"} onFocus={()=>setFocus(true)} onBlur={handleChange} />}
+          {props.type==="Number"&&<input type="number" placeholder={props.placeholder} onChange={handleChange} className={focus?"floating-input has-value":"floating-input"} onFocus={()=>setFocus(true)} onBlur={handleChange} />}
+          {props.type==="Email"&&<input type="email" placeholder={props.placeholder} onChange={handleChange} className={focus?"floating-input has-value":"floating-input"} onFocus={()=>setFocus(true)} onBlur={handleChange} />}
+          {props.type==="Date"&&<input type="date" placeholder={props.placeholder} onChange={handleChange} className={"floating-input has-value"} onFocus={()=>setFocus(true)} onBlur={handleChange} />}
+          {props.type==="Radio"&&
            <>
            <label className='round-radio'>
               <input type="radio" onChange={handleChange} className={"floating-radio has-value"} />

@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react'
-import logo from "../Images/policybazaar-logo.svg"
+import React, { useState } from 'react'
 import Download from "../Images/download-icon.svg"
 import Call from "../Images/calling-icon.svg"
 import headphone from "../Images/headphone-icon.svg"
@@ -23,22 +22,22 @@ const Header = () => {
         </div>
         <div class="rightMenu">
             <div>
-                <a className='downloadLink'>
+                <span className='downloadLink' >
                 <img src={Download} alt="Download Icon" />
                 Download Brochure
-                </a>
+                </span>
             </div>
             <div>
-                <a className='downloadLink'>
+                <span className='downloadLink'>
                 <img src={Download} alt="Download Icon" />
                 Download Benefit Illustrations
-                </a>
+                </span>
             </div>
             <div onClick={ExpertShow} ref={ref}>
-                <a className='talkToExpert'>
+                <span className='talkToExpert'>
                 <img src={Call} alt="Download Icon" />
                 Talk to an Expert
-                </a>
+                </span>
             </div>
             <div className={isActive ? 'talkExpertPopUpBody show': 'talkExpertPopUpBody'}>
                 <div className='topBox'>
