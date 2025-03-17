@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react'
 import InputElement from '../InputElement'
-import whatsapp from "../../Images/whatsapp-icon.svg"
 
 const ProductRight = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -46,7 +45,7 @@ const ProductRight = () => {
           <InputElement type="Email" label="Email Address" placeholder="Email Address" />
           <InputElement type="Input" label="Residential Status" placeholder="Residential Status" />
           <div className='whatsapp-update'>
-            <img src={whatsapp} alt="whatsapp icon" />
+            <img src="https://static.pbcdn.in/e2e-cdn/assets/icons/icon-whatsapp-solid.svg" alt="whatsapp icon" />
             <p>Get Updates on Whatsapp</p>
             <label className='switch'>
               <input type="checkbox" />
@@ -68,7 +67,7 @@ const ProductRight = () => {
             <div className='total-left'>
               <div className='amount-info'>
                 <div className='amount-content'>Total Maturity Amount</div>
-                <div className='amount-value'><span className='rupee'>&#8377;</span> 91.7 L <span className='moreinfo'><span className='custominfo'>i</span>More info</span></div>
+                <div className='amount-value'><span className='rupee'>&#8377;</span> 91.7 L <span className='moreinfo'><img src="https://static.pbcdn.in/e2e-cdn/assets/icons/icon-info-regular.svg" alt="Info" width="16" height="18" />More info</span></div>
               </div>
               <div className='amount-smallText'>
               *Based upon point to point returns of 10 years

@@ -1,13 +1,5 @@
 import React from 'react'
 import "./BottomSection.css"
-import upsideMarket from "../../Images/upsideMarket.svg"
-import lifeCover from "../../Images/lifeCover.svg"
-import taxSaving from "../../Images/taxSaving.svg"
-import ageInvesting from "../../Images/ageInvesting.svg"
-import minimumInvest from "../../Images/minimumInvest.svg"
-import numberYears from "../../Images/numberYears.svg"
-import regularPay from "../../Images/regularPay.svg"
-import limitedPay from "../../Images/limitedPay.svg"
 
 const BottomSection = () => {
   return (
@@ -21,7 +13,7 @@ const BottomSection = () => {
             <div className="card-wrapper">
                 <div className='card'>
                     <div className='card-icon'>
-                        <img src={upsideMarket} alt="Market" />
+                        <img src="https://static.pbcdn.in/e2e-cdn/assets/icons/kyp/icon-market-upside-blue.svg" alt="Market" />
                     </div>
                     <div className='card-content'>
                         <h3>Market Upside</h3>
@@ -30,7 +22,7 @@ const BottomSection = () => {
                 </div>
                 <div className='card'>
                     <div className='card-icon'>
-                        <img src={lifeCover} alt="Life cover" />
+                        <img src="https://static.pbcdn.in/e2e-cdn/assets/icons/kyp/icon-inbuild-life-cover.svg" alt="Life cover" />
                     </div>
                     <div className='card-content'>
                         <h3>Inbuilt Life Cover</h3>
@@ -39,7 +31,7 @@ const BottomSection = () => {
                 </div>
                 <div className='card'>
                     <div className='card-icon'>
-                        <img src={taxSaving} alt="tax saving" />
+                        <img src="https://static.pbcdn.in/e2e-cdn/assets/icons/kyp/icon-tax-saving-blue.svg" alt="tax saving" />
                     </div>
                     <div className='card-content'>
                         <h3>Tax Benefits</h3>
@@ -56,7 +48,7 @@ const BottomSection = () => {
             <div className="card-wrapper">
                 <div className='card'>
                     <div className='card-icon'>
-                        <img src={ageInvesting} alt="Investment" />
+                        <img src="https://static.pbcdn.in/e2e-cdn/assets/icons/kyp/icon-age-investing-blue.svg" alt="Investment" />
                     </div>
                     <div className='card-content'>
                         <h3>Age to start investing</h3>
@@ -82,7 +74,7 @@ const BottomSection = () => {
                 </div>
                 <div className='card'>
                     <div className='card-icon'>
-                        <img src={minimumInvest} alt="Minimum investment" />
+                        <img src="https://static.pbcdn.in/e2e-cdn/assets/icons/kyp/icon-minimum-invest.svg" alt="Minimum investment" />
                     </div>
                     <div className='card-content'>
                         <h3>Minimum amount to invest</h3>
@@ -124,7 +116,7 @@ const BottomSection = () => {
                 </div>
                 <div className='card'>
                     <div className='card-icon'>
-                        <img src={numberYears} alt="Year to Mature" />
+                        <img src="https://static.pbcdn.in/e2e-cdn/assets/icons/icon-number-years.svg" alt="Year to Mature" />
                     </div>
                     <div className='card-content'>
                         <h3>Number of years after which your investment will mature</h3>
@@ -158,7 +150,7 @@ const BottomSection = () => {
             <div className="card-wrapper">
                 <div className='card'>
                     <div className='card-icon'>
-                        <img src={regularPay} alt="Regular Pay" />
+                        <img src="https://static.pbcdn.in/e2e-cdn/assets/icons/kyp/icon-regular-pay-blue.svg" alt="Regular Pay" />
                     </div>
                     <div className='card-content'>
                         <h3>Regular Pay</h3>
@@ -167,7 +159,7 @@ const BottomSection = () => {
                 </div>
                 <div className='card'>
                     <div className='card-icon'>
-                        <img src={limitedPay} alt="Limited Pay" />
+                        <img src="https://static.pbcdn.in/e2e-cdn/assets/icons/kyp/icon-limited-pay-blue.svg" alt="Limited Pay" />
                     </div>
                     <div className='card-content'>
                         <h3>Limited Pay</h3>

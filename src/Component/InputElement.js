@@ -12,7 +12,7 @@ const InputElement = (props) => {
     }
   }
   return (
-    <div>
+    <>
       <div className='form-field'>
         <div className='form-floating'>
           {props.type==="Input"&&<input type="text" placeholder={props.placeholder} onChange={handleChange} className={focus?"floating-input has-value":"floating-input"} onFocus={()=>setFocus(true)} onBlur={handleChange} />}
@@ -45,7 +45,7 @@ const InputElement = (props) => {
         </div>
         <div className='error-msg'></div>
       </div>
-    </div>
+    </>
   )
 }
 

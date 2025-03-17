@@ -1,23 +1,18 @@
 import React from 'react';
-import knowPlan from "../../Images/know-your-plan.svg";
-import calender_icon from "../../Images/calender_icon.svg";
-import loyalty from "../../Images/loyalty.svg";
-import taxSaving from "../../Images/tax-saving.svg";
-import five_star_icon from "../../Images/five-star-partner-icon.png";
 import InputElement from '../InputElement';
 
 const ProductLeft = () => {
     
   return (
     <div className='Master-div'>
-        <div class="top-box">
+        <div className="top-box">
             <div className='logo'>
                 <img src="https://static.pbcdn.in/e2e-cdn/assets/logos/bajaj-allianz-life-logo.svg" width="100" alt="client logo" />
             </div>
             <div className='planName'>
                 <h3>Smart Wealth Goal</h3>
                 <a href="https://www.policybazaar.com/">
-                    <img src={knowPlan} alt="notepad" />
+                    <img src="https://static.pbcdn.in/e2e-cdn/assets/icons/icon-know-your-plan.svg" alt="notepad" />
                     Know Your Plan in 2 mins
                 </a>
             </div>
@@ -31,7 +26,7 @@ const ProductLeft = () => {
             <div className='plan-benefits'>
                 <div className='plan-feature'>
                     <div className='icon'>
-                        <img src={calender_icon} alt="feature icon" />
+                        <img src="https://static.pbcdn.in/e2e-cdn/assets/icons/icon-calender-solid.svg" alt="feature icon" />
                     </div>
                     <div className='feature-content'>
                         <h4>30 Days</h4>
@@ -40,7 +35,7 @@ const ProductLeft = () => {
                 </div>
                 <div className='plan-feature'>
                     <div className='icon'>
-                        <img src={loyalty} alt="feature icon" />
+                        <img src="https://static.pbcdn.in/e2e-cdn/assets/icons/kyp/icon-loyalty.svg" alt="feature icon" />
                     </div>
                     <div className='feature-content'>
                         <h4>12 L Life Cover</h4>
@@ -49,7 +44,7 @@ const ProductLeft = () => {
                 </div>
                 <div className='plan-feature'>
                     <div className='icon'>
-                        <img src={taxSaving} alt="feature icon" />
+                        <img src="https://static.pbcdn.in/e2e-cdn/assets/icons/kyp/icon-tax-saving.svg" alt="feature icon" />
                     </div>
                     <div className='feature-content'>
                         <h4>Tax Savings<sup>#</sup></h4>
@@ -58,14 +53,28 @@ const ProductLeft = () => {
                     </div>
                 </div>
             </div>
-            <div className='plan-benefits'>
+            <div class="certified-partner">
+                <div class="five-star-image">
+                    <img  src="https://static.pbcdn.in/e2e-cdn/assets/icons/icon-5-star-partner.svg" alt="5 Star Icon" width="80" height="80" />
+                </div>
+                <div class="certified-partner-info">
+                    <div class="trust-txt">
+                        <span>trust</span>
+                    </div>
+                        Policybazaar is Premium Partner for Bajaj Allianz Life 
+                    <div class="view-btn">
+                        View certificate
+                    </div>
+                </div>
+            </div>
+            {/* <div className='plan-benefits'>
                 <div className='platinum-partner'>
-                    <img width="45" src={five_star_icon} alt="feature icon" />
+                    <img width="45" src="https://static.pbcdn.in/e2e-cdn/assets/icons/icon-5-star-partner.svg" alt="feature icon" />
                     <div className='feature-content'>
                         <h4> Policybazaar is Platinum Partner for Bajaj Allianz Life ⓘ </h4>
                     </div>
                 </div> 
-            </div>
+            </div> */}
         </div>
     </div>
   )

@@ -1,9 +1,4 @@
 import React, { useState } from 'react'
-import Download from "../Images/download-icon.svg"
-import Call from "../Images/calling-icon.svg"
-import headphone from "../Images/headphone-icon.svg"
-import telephone from "../Images/telePhoneIcon.svg"
-import GlobalCall from "../Images/global-call-icon.svg"
 import { useDetectClickOutside } from 'react-detect-click-outside';
 
 const Header = () => {
@@ -20,22 +15,22 @@ const Header = () => {
         <div className='logo'>
             <img src="https://static.pbcdn.in/e2e-cdn/assets/logos/policybazaar-logo.svg" alt="logo" />
         </div>
-        <div class="rightMenu">
+        <div className="rightMenu">
             <div>
                 <span className='downloadLink' >
-                <img src={Download} alt="Download Icon" />
+                <img src="https://static.pbcdn.in/e2e-cdn/assets/icons/icon-download.svg" alt="Download Icon" width={13} height={13} />
                 Download Brochure
                 </span>
             </div>
             <div>
                 <span className='downloadLink'>
-                <img src={Download} alt="Download Icon" />
+                <img src="https://static.pbcdn.in/e2e-cdn/assets/icons/icon-download.svg" alt="Download Icon" width={13} height={13} />
                 Download Benefit Illustrations
                 </span>
             </div>
             <div onClick={ExpertShow} ref={ref}>
                 <span className='talkToExpert'>
-                <img src={Call} alt="Download Icon" />
+                <img src="https://static.pbcdn.in/e2e-cdn/assets/icons/icon-calling.svg" alt="Calling Icon" width={16} height={16} />
                 Talk to an Expert
                 </span>
             </div>
@@ -46,21 +41,21 @@ const Header = () => {
                 <div className='list'>
                     <ul>
                         <li>
-                        <img src={headphone} alt="phone icon" />
+                        <img src="https://static.pbcdn.in/e2e-cdn/assets/icons/icon-headset.svg" alt="phone icon" />
                         <div className='list-text'>
                             <p>Have Not Paid Yet (Sales)</p>
                             <a href='tel:1800-419-7717'>1800-419-7717</a>
                         </div>
                         </li>
                         <li>
-                        <img src={telephone} alt="phone icon" />
+                        <img src="https://static.pbcdn.in/e2e-cdn/assets/icons/icon-telephone.svg" alt="phone icon" />
                         <div className='list-text'>
                             <p>Have Already Paid (Service)</p>
                             <a href='tel:1800-258-5970'>1800-258-5970</a>
                         </div>
                         </li>
                         <li>
-                        <img src={GlobalCall} alt="phone icon" />
+                        <img src="https://static.pbcdn.in/e2e-cdn/assets/icons/icon-global.svg" alt="phone icon" />
                         <div className='list-text'>
                             <p>For NRI’s</p>
                             <a href='tel:+91 124-6656507'>+91 124-6656507</a>
