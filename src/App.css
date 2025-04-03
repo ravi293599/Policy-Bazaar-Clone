@@ -89,7 +89,7 @@ body {
   top: 45px;
   right: 20px;
   background: #fff;
-  width: 270px;
+  width: 300px;
   padding: 20px 40px;
   box-shadow: 0 8px 19px #cacfd5;
   z-index: 5;
@@ -170,6 +170,8 @@ body {
   border-radius: 0;
   border-bottom: 1px solid #e5e8eb;
   outline: 0;
+  appearance: none;
+  background: url(https://static.pbcdn.in/e2e-cdn/assets/icons/icon-arrow-down-grey.svg) 96% center no-repeat;
 }
 .has-value + .floating-label {
   font-size: 12px;
@@ -334,11 +336,17 @@ body {
   border-color: #225cff;
 }
 .rupee {
-  font-family: system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol;
   font-size: inherit;
   font-weight: 500;
-  color: #27313d;
-}
+  color: inherit;
+  }
+  .rupee:before {
+  font-family: system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol;
+  content: "\20B9";
+  display: inherit;
+  font-size: inherit;
+  color: inherit;
+  }
 .btn {
   padding: 8px 24px;
   min-height: 48px;

@@ -1,0 +1,477 @@
+.review-wrapper {
+    width: 100%;
+    max-width: 900px;
+    margin: 24px auto;
+    box-shadow: 0 0 6px 0 rgba(76, 90, 111, 0.17);
+    border-radius: 5px;
+    background: #fff;
+}
+
+.review-header {
+    width: 100%;
+    display: flex;
+    background: #fff;
+    padding: 24px 56px;
+    gap: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 1px solid #ebe5e5;
+    align-items: center;
+}
+
+.review-wrapper .clientPrdName {
+    font-weight: 500;
+}
+
+.review-header img {
+    display: block;
+    width: 100px;
+}
+
+.review-body {
+    padding: 20px 56px;
+    background: #fff;
+}
+
+.review-title h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.review-title p {
+    font-size: 12px;
+    font-weight: 500;
+    color: #8b6e0e;
+    font-style: italic;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.review-body .detail-section {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.review-body .detail-label {
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: 0.24px;
+    text-align: left;
+    color: #515a69;
+    display: block;
+}
+
+.review-body .detail-text {
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: 0.28px;
+    text-align: left;
+    color: #000;
+    margin: 0;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.review-body .details {
+    width: calc(50% - 10px);
+    position: relative;
+}
+
+    .review-body .details .verification {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 65px;
+        background: #fff;
+        border: 1px solid #b5b5b5;
+        border-radius: 8px;
+        padding: 10px 15px;
+    }
+
+.review-body .error-msg {
+    display: block;
+    color: #e74c3c;
+    font-size: 12px;
+    margin-top: 5px;
+    line-height: 14px;
+    font-weight: 400;
+}
+
+.review-body .review-field {
+    padding: 10px 15px;
+    border-radius: 8px;
+    width: 100%;
+    border: 1px solid #e3e8f0;
+    background: #f6f6fc;
+}
+
+.review-field .edit-details {
+    position: absolute;
+    right: 20px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.review-body .edit-details img {
+    width: 100%;
+    filter: brightness(0) saturate(100%) invert(18%) sepia(2%) saturate(255%) hue-rotate(119deg) brightness(89%) contrast(89%);
+}
+
+.review-body .checkboxLabel {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    margin-right: 0px;
+    align-items: center;
+}
+
+review-body .checkBox input[type="checkbox"]:checked ~ .radioBtnAnswerTxt {
+    font-weight: 500;
+}
+
+.review-body .floatingLabel {
+    position: relative;
+}
+
+.review-body .floatingLabelText {
+    color: #4c5a6f;
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    pointer-events: none;
+    background: #fff;
+    left: 0px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.review-body .floating-input {
+    border: 0;
+    padding: 7px 0;
+    padding-right: 40px;
+}
+
+    .review-body .floating-input.has-value ~ .floatingLabelText {
+        top: -18px;
+        font-size: 11px;
+        background: #fff;
+    }
+
+.review-body .checkboxLabel .CheckBoxTick ~ .radioBtnAnswerTxt {
+    font-size: 14px;
+    font-weight: 500 !important;
+}
+
+.accordion-box {
+    border-radius: 8px;
+    border: 1px solid #e3e8f0;
+    background: #f6f6fc;
+    margin-top: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.reviewFormDetails ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+    .reviewFormDetails ul li {
+        width: calc(33.33% - 6px);
+        padding: 8px;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        /* justify-content: space-between;
+        border-bottom: 1px solid #e3e8f0; */
+        border-radius: 4px;
+        background: #f6f6fc;
+    }
+
+        .reviewFormDetails ul li.rider-li {
+            background: transparent;
+            padding: 0;
+            width: 100%;
+            border-radius: 0;
+        }
+
+.reviewFormLeftDetail {
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: 0.24px;
+    text-align: left;
+    color: #7a869a;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.reviewFormRightDetail {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: 0.28px;
+    text-align: left;
+    color: #27313d;
+    font-weight: 500;
+    word-break: break-word;
+}
+
+.reviewDobPostSuffix {
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.83;
+    letter-spacing: normal;
+    text-align: right;
+    color: #253858;
+    border-radius: 8px;
+    background-color: #f0f3f9;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 2px 8px;
+}
+
+.secondary-accordion-box {
+    background: #fff;
+}
+
+.accordion-box:first-child {
+    margin-top: 0;
+}
+
+.accordion-box .accordion-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    cursor: pointer;
+    background: #f6f6fc;
+}
+
+.secondary-accordion-box .accordion-head {
+    height: 60px;
+}
+
+.accordion-box .accordion-head img {
+    transition: 0.5s ease-in-out all;
+}
+
+.accordion-box .accordion-head h2 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #27313d;
+    margin: 0;
+}
+
+.accordion-box .accordion-body {
+    padding: 0 16px 24px;
+}
+
+.accordion-body p {
+    margin: 0 0 8px 0;
+    font-size: 14px;
+    color: #27313d;
+    line-height: 1.5;
+}
+
+    .accordion-body p:last-child {
+        margin: 0;
+    }
+
+.accordion-body .detailsTermsCondition li {
+    margin-bottom: 15px;
+}
+
+    .accordion-body .detailsTermsCondition li:last-child {
+        margin-bottom: 0;
+    }
+
+.accordion-body .detailsTermsCondition .radioBtnAnswerTxt {
+    display: flex;
+    align-items: flex-start;
+    font-weight: 400;
+    font-size: 13px;
+    color: #667793;
+}
+
+    .accordion-body .detailsTermsCondition .radioBtnAnswerTxt > * {
+        font-weight: 400;
+        font-size: 13px;
+        color: #667793;
+    }
+
+    .accordion-body .detailsTermsCondition .radioBtnAnswerTxt .gray-color {
+        filter: brightness(0) saturate(100%) invert(69%) sepia(19%) saturate(388%) hue-rotate(167deg) brightness(85%) contrast(83%);
+        margin: 5px 6px 0px 0px;
+    }
+
+.accordion-box.accordion-active .accordion-head img {
+    transform: rotate(180deg);
+}
+
+.review-total {
+    width: 100%;
+    background: #fff;
+    padding: 16px 24px;
+    border-top: 1px solid #E3E8F0;
+    position: sticky;
+    bottom: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    animation: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.secondary-btn{
+    border: solid 1px #0d6efd;
+    background-color: #ffffff;
+    color: #0d6efd;
+    display: flex;
+    align-items: center;
+}
+.total-premium{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.btn-wrap{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.premiumPaymentMode{
+    font-size: 12px;
+}
+.totalAmtPremium{
+    font-size: 22px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+.reviewTitle{
+    margin: 10px 0;
+
+    font-size: 16px;;
+}
+@media(max-width: 767px) {
+    .review-wrapper {
+        width: calc(100% - 20px);
+        margin-top: 15px;
+        margin-bottom: 130px;
+    }
+
+    .review-header {
+        padding: 16px 16px;
+        display: none;
+    }
+
+    .review-total .rupee {
+        margin-top: -4px;
+    }
+
+    .accordion-box .accordion-head h2 {
+        font-size: 14px;
+    }
+
+    .review-body {
+        border-radius: 5px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        padding: 16px 16px;
+    }
+
+        .review-body .review-title h2 {
+            font-size: 14px;
+        }
+
+        .review-body .review-title p {
+            margin-top: 2px;
+            margin-bottom: 16px;
+        }
+
+        .review-body .detail-section {
+            gap: 10px;
+        }
+
+        .review-body .detail-text {
+            font-size: 14px;
+        }
+
+        .review-body .details {
+            width: 100%;
+        }
+
+            .review-body .details .verification {
+                height: 62px;
+            }
+
+    .review-total {
+        position: fixed;
+        padding: 8px 8px;
+        left: 0;
+    }
+
+    .accordion-box .accordion-body {
+        padding: 0 16px 16px 16px;
+    }
+
+    .priceBreakUp {
+        right: 0px;
+    }
+
+    .infoIconDetailBox:before {
+        right: 4px;
+        bottom: -9px;
+    }
+
+    .infoIconDetailBox:after {
+        right: 1px;
+        top: calc(100% - 1px);
+    }
+
+    .mobileHeader .clientPrdName {
+        font-size: 12px;
+    }
+
+    .reviewFormDetails ul li.rider-li:first-child {
+        padding: 0;
+        border-top: none;
+    }
+
+    .reviewFormDetails ul li.rider-li {
+        background: transparent;
+        padding: 8px 0 0 0;
+        border-top: 1px solid #e3e8f0;
+    }
+}

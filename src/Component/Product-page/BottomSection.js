@@ -26,7 +26,7 @@ const BottomSection = () => {
                     </div>
                     <div className='card-content'>
                         <h3>Inbuilt Life Cover</h3>
-                        <p>12 L life cover throughout the policy duration</p>
+                        <p><span className='rupee'></span> 12 L life cover throughout the policy duration</p>
                     </div>
                 </div>
                 <div className='card'>

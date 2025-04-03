@@ -1,7 +1,7 @@
 import React from 'react';
 import InputElement from '../InputElement';
 
-const ProductLeft = () => {
+const ProductLeft = ({nameInvestAmt,namePayFor,nameWithdraw,investAmt,payFor,withdrawAfter,handleInputChange}) => {
     
   return (
     <div className='Master-div'>
@@ -19,9 +19,9 @@ const ProductLeft = () => {
         </div>
         <div className='plan-details-wrapper'>
             <form>
-                <InputElement type="Input" label="Investment Amount" />
-                <InputElement type="Select" label="Pay For" />
-                <InputElement type="Select" label="Withdraw After" />
+                <InputElement type="Input" label="Investment Amount" name={nameInvestAmt} value={investAmt} func={handleInputChange} />
+                <InputElement type="Select" label="Pay For" name={namePayFor} value={payFor} func={handleInputChange} />
+                <InputElement type="Select" label="Withdraw After" name={nameWithdraw} value={withdrawAfter} func={handleInputChange} />
             </form>
             <div className='plan-benefits'>
                 <div className='plan-feature'>
@@ -53,28 +53,20 @@ const ProductLeft = () => {
                     </div>
                 </div>
             </div>
-            <div class="certified-partner">
-                <div class="five-star-image">
+            <div className="certified-partner">
+                <div className="five-star-image">
                     <img  src="https://static.pbcdn.in/e2e-cdn/assets/icons/icon-5-star-partner.svg" alt="5 Star Icon" width="80" height="80" />
                 </div>
-                <div class="certified-partner-info">
-                    <div class="trust-txt">
+                <div className="certified-partner-info">
+                    <div className="trust-txt">
                         <span>trust</span>
                     </div>
                         Policybazaar is Premium Partner for Bajaj Allianz Life 
-                    <div class="view-btn">
+                    <div className="view-btn">
                         View certificate
                     </div>
                 </div>
             </div>
-            {/* <div className='plan-benefits'>
-                <div className='platinum-partner'>
-                    <img width="45" src="https://static.pbcdn.in/e2e-cdn/assets/icons/icon-5-star-partner.svg" alt="feature icon" />
-                    <div className='feature-content'>
-                        <h4> Policybazaar is Platinum Partner for Bajaj Allianz Life ⓘ </h4>
-                    </div>
-                </div> 
-            </div> */}
         </div>
     </div>
   )

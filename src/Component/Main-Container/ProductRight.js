@@ -1,13 +1,13 @@
 import React, {useEffect, useState} from 'react'
-import InputElement from '../InputElement'
+import InputElement, { CustomRadio, RadioElement } from '../InputElement'
 
-const ProductRight = () => {
+const ProductRight = ({nameInvesting,nameName,nameGender,nameDOB,nameMobile,nameEmail,nameResdStatus,investing,Fullname,gender,DOB,mobile,email,resdStatus,handleSubmit,handleInputChange}) => {
   const [isVisible, setIsVisible] = useState(false);
     const listenToScroll = () =>{
         let heightToHidden = 200;
         const winScroll = 
         document.body.scrollTop || document.documentElement.scrollTop;
-        console.log(winScroll);
+        // console.log(winScroll);
         if(winScroll > heightToHidden){
           setIsVisible(true)
         }else{
@@ -28,22 +28,29 @@ const ProductRight = () => {
               <label>You are investing for</label>
               <span className='question-mark'>?</span>
             </div>
-            <label className='radio-custom'>
+            {/* <label className='radio-custom'>
               <input type="radio" name="investingFor" />
               <span className='radio-label'>Yourself</span>
             </label>
             <label className='radio-custom'>
               <input type="radio" name="investingFor" />
               <span className='radio-label'>Join Life</span>
-            </label>
+            </label> */}
+            <CustomRadio fieldValue="Yourself" name={nameInvesting} func={handleInputChange} />
+            <CustomRadio fieldValue="Join Life" name={nameInvesting} func={handleInputChange} />
           </div>
-          <InputElement type="Input" label="Your Full Name" placeholder="Your Full Name" />
+          <InputElement type="Input" value={Fullname} name={nameName} label="Your Full Name" placeholder="Your Full Name" func={handleInputChange} />
           <br/>
-          <InputElement type="Radio" label="Gender" fieldValue1="Male" fieldValue2="Female" />
-          <InputElement type="Date" label="Date Of Birth" placeholder="Your Full Name" />
-          <InputElement type="Number" label="Mobile Number" placeholder="Mobile Number" />
-          <InputElement type="Email" label="Email Address" placeholder="Email Address" />
-          <InputElement type="Input" label="Residential Status" placeholder="Residential Status" />
+          <div>
+            <label className='floating-text'>Gender</label>
+            <RadioElement fieldValue="Male" name={nameGender} func={handleInputChange} />
+            <RadioElement fieldValue="Female" name={nameGender} func={handleInputChange} />
+          </div>
+          {/* <InputElement type="Radio" label="Gender" fieldValue1="Male" fieldValue2="Female" name={nameGender} value={gender} /> */}
+          <InputElement type="Date" label="Date Of Birth" placeholder="Your Full Name" name={nameDOB} value={DOB} func={handleInputChange} />
+          <InputElement type="Input" label="Mobile Number" placeholder="Mobile Number" name={nameMobile} value={mobile} func={handleInputChange} />
+          <InputElement type="Email" label="Email Address" placeholder="Email Address" name={nameEmail} value={email} func={handleInputChange} />
+          <InputElement type="Input" label="Residential Status" placeholder="Residential Status" name={nameResdStatus} value={resdStatus} func={handleInputChange} />
           <div className='whatsapp-update'>
             <img src="https://static.pbcdn.in/e2e-cdn/assets/icons/icon-whatsapp-solid.svg" alt="whatsapp icon" />
             <p>Get Updates on Whatsapp</p>
@@ -67,14 +74,14 @@ const ProductRight = () => {
             <div className='total-left'>
               <div className='amount-info'>
                 <div className='amount-content'>Total Maturity Amount</div>
-                <div className='amount-value'><span className='rupee'>&#8377;</span> 91.7 L <span className='moreinfo'><img src="https://static.pbcdn.in/e2e-cdn/assets/icons/icon-info-regular.svg" alt="Info" width="16" height="18" />More info</span></div>
+                <div className='amount-value'><span className='rupee'></span> 91.7 L <span className='moreinfo'><img src="https://static.pbcdn.in/e2e-cdn/assets/icons/icon-info-regular.svg" alt="Info" width="16" height="18" />More info</span></div>
               </div>
               <div className='amount-smallText'>
               *Based upon point to point returns of 10 years
               </div>
             </div>
             <div className='total-right'>
-              <button className='btn btn-primary'>Proceed</button>
+              <button className='btn btn-primary' onClick={handleSubmit}>Proceed</button>
             </div>
           </div>
         </div>
