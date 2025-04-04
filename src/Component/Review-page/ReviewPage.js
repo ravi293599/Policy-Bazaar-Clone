@@ -151,7 +151,7 @@ const ReviewPage = () =>{
                     <label className="checkboxLabel">
                         <input type="checkbox" className="hidden" checked="checked" disabled="disabled" />
                         <span className="CheckBoxTick"></span>
-                        <span className="radioBtnAnswerTxt">I Agree to the <a href="https://buylifeinsurance.policybazaar.com/Emailer/terms-conditions.html" target="_blank">terms and conditions</a></span>
+                        <span className="radioBtnAnswerTxt">I Agree to the <a href="https://buylifeinsurance.policybazaar.com/Emailer/terms-conditions.html" rel="noreferrer" target="_blank">terms and conditions</a></span>
                     </label>
                 </div>
             </div>
