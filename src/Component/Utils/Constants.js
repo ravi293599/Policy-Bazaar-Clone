@@ -1,0 +1,3 @@
+export const years = ["5 years", "6 years","7 Years","8 Years", "9 Years","10 Years","11 Years","12 Years","13 Years","14 Years","15 Years","16 Years","17 Years","18 Years","19 Years","20 Years","21 Years","22 Years","23 Years","24 Years","25 Years","26 Years"];
+export const education = [" Master and above"," Graduation"," 12th Pass"," Primary"," Illiterate"];
+export const occupation =[" Salaried (Govt Employee)"," Salaried (Other than Govt)"," Business"," Professional"," Retired"," Agriculture"," Student"," Housewife"," Unemployed"," Armed Forces","Others"];

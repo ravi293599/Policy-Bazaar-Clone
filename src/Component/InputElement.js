@@ -33,12 +33,16 @@ const InputElement = (props) => {
            </label> */}
            </>
           }
-          {props.type==="Select"&&<select type="select" placeholder="Investment Amount*" name={props.name} value={props.value} onChange={props.func} className={"floating-select has-value"} onFocus={()=>setFocus(true)} onBlur={handleChange}>
-            <option value="1">1</option>
-            <option value="2">2</option>
+          {props.type==="Select"&&<select type="select" placeholder="Investment Amount*" name={props.name} value={props.value} onChange={props.func} optionData={props.optionData} className={"floating-select has-value"} onFocus={()=>setFocus(true)} onBlur={handleChange}>
+            {
+              props.optionData.map((op) =>(
+                <option value={op.id}>{op}</option>
+              ))
+            }
+            {/* <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
-            <option value="5">5</option>
+            <option value="5">5</option> */}
           </select>}
           <label className='floating-label'>{props.label}</label>
         </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import InputElement from '../InputElement';
+import { years } from '../Utils/Constants';
 
 const ProductLeft = ({nameInvestAmt,namePayFor,nameWithdraw,investAmt,payFor,withdrawAfter,handleInputChange}) => {
     
@@ -20,8 +21,8 @@ const ProductLeft = ({nameInvestAmt,namePayFor,nameWithdraw,investAmt,payFor,wit
         <div className='plan-details-wrapper'>
             <form>
                 <InputElement type="Input" label="Investment Amount" name={nameInvestAmt} value={investAmt} func={handleInputChange} />
-                <InputElement type="Select" label="Pay For" name={namePayFor} value={payFor} func={handleInputChange} />
-                <InputElement type="Select" label="Withdraw After" name={nameWithdraw} value={withdrawAfter} func={handleInputChange} />
+                <InputElement type="Select" optionData={years} label="Pay For" name={namePayFor} value={payFor} func={handleInputChange} />
+                <InputElement type="Select" optionData={years} label="Withdraw After" name={nameWithdraw} value={withdrawAfter} func={handleInputChange} />
             </form>
             <div className='plan-benefits'>
                 <div className='plan-feature'>

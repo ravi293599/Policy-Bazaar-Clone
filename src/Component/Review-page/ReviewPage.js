@@ -1,14 +1,30 @@
-import { useSelector } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 import Header from "../Header"
 import "./ReviewPage.css"
+import { addData } from "../Store/FormSlice";
+import { useEffect, useState } from "react";
 
 const ReviewPage = () =>{
-    const myData = useSelector(state => state.UserData);
+    const dispatch = useDispatch();
+    const [addDetailActive, setAddDetailActive] = useState(false);
+    const [declarActive, setDeclarActive] = useState(false);
+    let myData = useSelector(state => state.UserData);
+    if(myData === null){
+        const savedData = localStorage.getItem("userData")
+        dispatch(addData(savedData));
+        console.log(savedData);
+    }
+    useEffect(()=>{
+        
+    },[myData])
+    //myData = useSelector(state => state.UserData);
     console.log(myData);
     return(
         <>
         <Header />
-        <div className="review-wrapper">
+        {
+            myData!==null &&
+            <div className="review-wrapper">
             <div className="review-header">
                 <div className="clientLogo mobileNone">
                     <img src="https://static.pbcdn.in/e2e-cdn/assets/logos/bajaj-allianz-life-logo.svg" alt="Client Logo" />
@@ -49,90 +65,94 @@ const ReviewPage = () =>{
                     </div>
                 </div>
                 {/* <!--Additional Details section added--> */}
-                <div className="accordion-box secondary-accordion-box" id="additionalDetails">
+                <div className="accordion-box secondary-accordion-box" id="additionalDetails" onClick={()=>setAddDetailActive(!addDetailActive)}>
                     <div className="accordion-head">
                         <h2>Additional Details</h2>
                         <img src="https://static.pbcdn.in/e2e-cdn/assets/icons/icon-arrow-down-grey.svg" alt="arrow-gray" />
                     </div>
-                    <div className="accordion-body">
-                        <div className="reviewAllDetails">
-                            <div className="d-flex align-items-center">
-                                <div className="reviewTitle">
-                                    Personal Info
-                                </div>
-                            </div>
-                            <div className="reviewFormDetails">
-                                <ul>
-                                    <li>
-                                        <div className="reviewFormLeftDetail">Occupation</div>
-                                        <div className="reviewFormRightDetail">Salaried</div>
-                                    </li>
-                                    <li>
-                                        <div className="reviewFormLeftDetail">Education</div>
-                                        <div className="reviewFormRightDetail">Post Graduate &amp; above</div>
-                                    </li>
-                                    <li>
-                                        <div className="reviewFormLeftDetail">PIN Code</div>
-                                        <div className="reviewFormRightDetail">110009</div>
-                                    </li>
-                                    <li>
-                                        <div className="reviewFormLeftDetail">City</div>
-                                        <div className="reviewFormRightDetail">Delhi</div>
-                                    </li>
-                                    <li>
-                                        <div className="reviewFormLeftDetail">Nationality</div>
-                                        <div className="reviewFormRightDetail">Indian</div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="reviewAllDetails">
-                            <div className="d-flex align-items-center">
-                                <div className="reviewTitle">
-                                    Profile Details
-                                </div>
-                            </div>
-                            <div className="reviewFormDetails">
-                                <ul>
-                                    <li>
-                                        <div className="reviewFormLeftDetail">Gender</div>
-                                        <div className="reviewFormRightDetail">Male</div>
-                                    </li>
-                                    <li>
-                                        <div className="reviewFormLeftDetail">Tobacco User</div>
-                                        <div className="reviewFormRightDetail">No</div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="reviewAllDetails">
-                            <div className="d-flex align-items-center">
-                                <div className="reviewTitle">
-                                    Plan Info
-                                </div>
-                            </div>
-                            <div className="reviewFormDetails">
-                                <ul>
-                                    <li>
-                                        <div className="reviewFormLeftDetail">Policy Term</div>
-                                        <div className="reviewFormRightDetail">36 Years</div>
-                                    </li>
-                                    <li>
-                                        <div className="reviewFormLeftDetail">Pay for</div>
-                                        <div className="reviewFormRightDetail">36 Years</div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                   {addDetailActive &&
+                     <div className="accordion-body">
+                     <div className="reviewAllDetails">
+                         <div className="d-flex align-items-center">
+                             <div className="reviewTitle">
+                                 Personal Info
+                             </div>
+                         </div>
+                         <div className="reviewFormDetails">
+                             <ul>
+                                 <li>
+                                     <div className="reviewFormLeftDetail">Occupation</div>
+                                     <div className="reviewFormRightDetail">{myData.Occupation}</div>
+                                 </li>
+                                 <li>
+                                     <div className="reviewFormLeftDetail">Education</div>
+                                     <div className="reviewFormRightDetail">{myData.Education}</div>
+                                 </li>
+                                 <li>
+                                     <div className="reviewFormLeftDetail">PIN Code</div>
+                                     <div className="reviewFormRightDetail">{myData.Pincode}</div>
+                                 </li>
+                                 {/* <li>
+                                     <div className="reviewFormLeftDetail">City</div>
+                                     <div className="reviewFormRightDetail">Delhi</div>
+                                 </li> */}
+                                 <li>
+                                     <div className="reviewFormLeftDetail">Nationality</div>
+                                     <div className="reviewFormRightDetail">{myData.resdStatus}</div>
+                                 </li>
+                             </ul>
+                         </div>
+                     </div>
+                     <div className="reviewAllDetails">
+                         <div className="d-flex align-items-center">
+                             <div className="reviewTitle">
+                                 Profile Details
+                             </div>
+                         </div>
+                         <div className="reviewFormDetails">
+                             <ul>
+                                 <li>
+                                     <div className="reviewFormLeftDetail">Gender</div>
+                                     <div className="reviewFormRightDetail">{myData.gender}</div>
+                                 </li>
+                                 {/* <li>
+                                     <div className="reviewFormLeftDetail">Tobacco User</div>
+                                     <div className="reviewFormRightDetail">No</div>
+                                 </li> */}
+                             </ul>
+                         </div>
+                     </div>
+                     <div className="reviewAllDetails">
+                         <div className="d-flex align-items-center">
+                             <div className="reviewTitle">
+                                 Plan Info
+                             </div>
+                         </div>
+                         <div className="reviewFormDetails">
+                             <ul>
+                                 <li>
+                                     <div className="reviewFormLeftDetail">Policy Term</div>
+                                     <div className="reviewFormRightDetail">{myData.withdrawAfter}</div>
+                                 </li>
+                                 <li>
+                                     <div className="reviewFormLeftDetail">Pay for</div>
+                                     <div className="reviewFormRightDetail">{myData.payFor}</div>
+                                 </li>
+                             </ul>
+                         </div>
+                     </div>
+                 </div>
+                   }
                 </div>
                 {/* <!--Additional Details section End--> */}
-                <div className="accordion-box">
+                <div className="accordion-box" onClick={() => setDeclarActive(!declarActive)}>
                     <div className="accordion-head">
                         <h2>Declarations</h2>
                         <img src="https://static.pbcdn.in/e2e-cdn/assets/icons/icon-arrow-down-grey.svg" alt="arrow-gray" />
                     </div>
-                    <div className="accordion-body">
+                    {   
+                        declarActive &&
+                        <div className="accordion-body">
                         <ul className="checkoutTermsCondition detailsTermsCondition">
                             <li>
                                 <span className="radioBtnAnswerTxt">
@@ -146,11 +166,12 @@ const ReviewPage = () =>{
                             </li>
                         </ul>
                     </div>
+                    }
                 </div>
-                <div className="mt-2 checkBox">
-                    <label className="checkboxLabel">
-                        <input type="checkbox" className="hidden" checked="checked" disabled="disabled" />
-                        <span className="CheckBoxTick"></span>
+                <div className="mt-2 checkBox declaration">
+                    <label className="checkbox-label">
+                        <input type="checkbox" className="hidden" />
+                        <span className="checkbox-tick"></span>
                         <span className="radioBtnAnswerTxt">I Agree to the <a href="https://buylifeinsurance.policybazaar.com/Emailer/terms-conditions.html" rel="noreferrer" target="_blank">terms and conditions</a></span>
                     </label>
                 </div>
@@ -165,11 +186,12 @@ const ReviewPage = () =>{
                     </div>
                 </div>
                 <div className="btn-wrap">
-                    <a href="/iProtectMobile/EditLead?token=0835C6F8-F904-4FE5-BFFC-8CF1E674C604" className="btn secondary-btn">Edit Details</a>
+                    <a href="/" className="btn secondary-btn">Edit Details</a>
                     <button type="submit" className="btn btn-primary mw-100 btn-primary-width proceedBtn">Checkout</button>
                 </div>
             </div>
         </div>
+        }
         </>
     )
 }
